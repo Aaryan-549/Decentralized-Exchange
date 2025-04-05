@@ -3,7 +3,17 @@
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-brightgreen)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4%2B-blue)](https://www.typescriptlang.org/)
 
-A minimal implementation of a constant product automated market maker (x*y=k) based on [Web Dev Simplified's tutorial](https://www.youtube.com/watch?v=Wb6MmUa0bu0).
+A minimal implementation of a constant product automated market maker (x*y=k), inspired by common decentralized exchange mechanics like Uniswap.
+
+---
+
+## 🧰 Tech Stack
+
+- **Node.js** 18+
+- **TypeScript** 4+
+- **Express.js** – for REST API routing
+
+---
 
 ## 🚀 Quick Start
 
@@ -17,9 +27,11 @@ npm install
 npm run dev
 ```
 
+---
+
 ## 📚 API Reference
 
-### Buy ETH
+### 💰 Buy ETH
 ```http
 POST /buy-asset
 Content-Type: application/json
@@ -29,7 +41,7 @@ Content-Type: application/json
 }
 ```
 
-### Sell ETH
+### 💸 Sell ETH
 ```http
 POST /sell-asset
 Content-Type: application/json
@@ -39,7 +51,9 @@ Content-Type: application/json
 }
 ```
 
-## 💻 Development
+---
+
+## 💻 Development Commands
 
 | Command         | Action                         |
 |-----------------|--------------------------------|
@@ -47,17 +61,23 @@ Content-Type: application/json
 | npm start       | Run production server          |
 | npm run dev     | Auto-reload development server |
 
+---
+
 ## 📊 Initial Pool State
 ```typescript
 ETH: 200
-USDC: 700,000
+USDC: 700_000
 ```
+
+---
 
 ## 📝 Learning Resources
 
 - [AMM Math Explained](#)
-- [Original Tutorial Video](https://www.youtube.com/watch?v=Wb6MmUa0bu0)
+- [Understanding Constant Product AMMs (x * y = k)](#)
+
+---
 
 ## ⚠️ Disclaimer
 
-This is an educational prototype. Not for production use.
+This is an educational prototype. **Not intended for production use.**
